@@ -33,6 +33,12 @@ public class CityList {
        }
         cities.remove(city);
     }
+    
+     /**
+     * This returns a sorted list of cities
+     * @return
+     *      Return the sorted list
+     */
         
     public List<City> getCities() {
         List<City> list = cities;
