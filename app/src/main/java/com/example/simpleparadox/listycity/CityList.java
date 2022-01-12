@@ -27,10 +27,26 @@ public class CityList {
      * @return
      *      Return the sorted list
      */
+    public void delete( City city){
+    if(cities.size()<1 || !cities.contains(city)){
+        throw new IllegalArgumentException();
+       }
+        cities.remove(city);
+    }
+        
     public List<City> getCities() {
         List<City> list = cities;
         Collections.sort(list);
         return list;
+    }
+     /**
+     * Returns the size of the cities list
+     * @return
+     *      Returns the size of cities list
+     */
+    public int Size(){
+        List<City> list = cities;
+        return list.size();
     }
 
 }
